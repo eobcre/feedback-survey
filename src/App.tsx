@@ -1,17 +1,24 @@
 import Answer from './components/Answer';
-import NextButton from './components/NextButton';
+import Button from './components/Button';
 import PageDisplay from './components/PageDisplay';
-import PreviousButton from './components/PreviousButton';
 import Question from './components/Question';
 
 const App = () => {
+  const handleClickPrevious = () => {
+    console.log('previous');
+  };
+
+  const handleClickNext = () => {
+    console.log('next');
+  };
+
   return (
     <div>
       <PageDisplay />
       <Question />
       <Answer />
-      <PreviousButton />
-      <NextButton />
+      <Button onClick={handleClickNext} label='Previous' />
+      <Button onClick={handleClickPrevious} label='Next' />
     </div>
   );
 };
