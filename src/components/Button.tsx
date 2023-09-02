@@ -1,15 +1,14 @@
 type ButtonProps = {
   onClick: React.MouseEventHandler<HTMLButtonElement>;
   label: string;
+  disabled?: boolean;
+  className?: string;
 };
 
-const Button: React.FC<ButtonProps> = ({ onClick, label }) => {
+const Button: React.FC<ButtonProps> = ({ onClick, label, className }) => {
   return (
     <>
-      <button
-        onClick={onClick}
-        className='text-sm border border-black rounded w-[140px] py-2'
-      >
+      <button onClick={onClick} className={`text-sm ${className}`}>
         {label}
       </button>
     </>
