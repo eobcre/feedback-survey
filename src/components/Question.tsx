@@ -1,5 +1,17 @@
-const Question: React.FC = () => {
-  return <div>Question</div>;
+import { questions } from '../data/questions';
+
+type Props = {
+  questionIndex: number;
+};
+
+const Question: React.FC<Props> = ({ questionIndex }) => {
+  const currentQuestion = questions[questionIndex];
+
+  return (
+    <div className='flex justify-center items-center mb-10'>
+      <h2>{currentQuestion.question}</h2>
+    </div>
+  );
 };
 
 export default Question;
