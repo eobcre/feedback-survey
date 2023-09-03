@@ -1,4 +1,8 @@
+import { useState } from 'react';
+
 const Answer: React.FC = () => {
+  const [clicked, setClicked] = useState<number | null>(null);
+
   const inputAnswers = [
     'Totally disagree',
     '',
@@ -10,6 +14,10 @@ const Answer: React.FC = () => {
     '',
     'Totally agree',
   ];
+
+  const handleClick = (index: number) => {
+    setClicked(index);
+  };
 
   return (
     <div className='flex justify-center'>
@@ -24,7 +32,10 @@ const Answer: React.FC = () => {
           <input
             type='checkbox'
             id={`linked-${index}`}
-            className='h-3 w-3 rounded-full border-2 border-[#B1CDF1] appearance-none cursor-pointer checked:bg-black checked:border-black'
+            onClick={() => handleClick(index)}
+            className={`border-2 border-[#B1CDF1] rounded-full appearance-none cursor-pointer w-3 h-3 ${
+              clicked === index ? 'bg-black border-black' : ''
+            }`}
           />
         </div>
       ))}
