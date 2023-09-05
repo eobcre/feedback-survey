@@ -31,13 +31,11 @@ const App = () => {
           <Button
             onClick={handleClickPrevious}
             label='Previous'
-            disabled={questionIndex === 0}
             className='border border-black rounded py-2 w-[120px]'
           />
           <Button
             onClick={handleClickNext}
             label='Next'
-            disabled={questionIndex === questions.length - 1}
             className='bg-[#567FEA] text-white rounded py-2 w-[120px]'
           />
         </div>
