@@ -25,11 +25,13 @@ const Answer: React.FC = () => {
       {inputAnswers.map((answer, index) => (
         <div className='relative'>
           <input
-            type='checkbox'
+            type='radio'
             id={`linked-${index}`}
             onClick={() => handleClick(index)}
-            className={`relative inline-block border-2 border-[#B1CDF1] rounded-full appearance-none cursor-pointer mx-4 w-3 h-3 before:content-[''] before:absolute before:top-[3px] before:left-[10px] before:w-[2.1rem] before:h-[0.1rem] before:bg-[#B1CDF1] ${
-              clicked === index ? 'bg-black border-black' : ''
+            className={`relative inline-block border-2 border-[#B1CDF1] rounded-full appearance-none cursor-pointer mx-4 w-3 h-3 after:content-[''] after:absolute after:top-[3px] after:left-[10px] after:w-[2.1rem] after:h-[0.1rem] after:bg-[#B1CDF1] ${
+              clicked === index
+                ? 'bg-black border-[#F4F9FF] shadow scale-150 after:w-[1.2rem] after:h-[0.07rem]'
+                : ''
             }`}
           />
           <label
