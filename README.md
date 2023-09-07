@@ -1,6 +1,6 @@
 ## Feedback Survey
 
-This is the daily challenge I participate in on [Web Dev Daily](https://www.webdevdaily.io/).
+This is the daily challenge I participate in on [WebDevDaily](https://www.webdevdaily.io/).
 
 ### Features
 
