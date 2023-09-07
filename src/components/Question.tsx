@@ -9,7 +9,7 @@ const Question: React.FC<Props> = ({ questionIndex }) => {
 
   return (
     <div className='flex justify-center items-center mb-10'>
-      <h2 className='font-Arial'>{currentQuestion.question}</h2>
+      <h2 className='font-Arial font-bold'>{currentQuestion.question}</h2>
     </div>
   );
 };
