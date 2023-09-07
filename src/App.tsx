@@ -25,10 +25,17 @@ const App = () => {
     currentPage < 3 ? setCurrentPage((prevState) => prevState + 1) : '';
   };
 
+  const progressCal = () => {
+    const barWidth = 120;
+    const totalPages = 3;
+    return (currentPage / totalPages) * barWidth;
+  };
+
   return (
     <div className='flex justify-center items-center bg-[#F4FAFF] h-screen'>
       <div className='bg-white rounded-xl px-16 w-[600px] h-[330px]'>
         <PageDisplay currentPage={currentPage} />
+        <ProgressBar progressCal={progressCal} />
         <Question questionIndex={questionIndex} />
         <Answer />
         <div className='flex justify-between mt-16'>
