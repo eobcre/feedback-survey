@@ -4,7 +4,7 @@
 
 - The progress bar displays the current page number and changes the progress meter accordingly when you click the Previous and Next buttons.
 - You can go back to the previous page or move to the next page using the "Previous" and "Next" buttons.
-- As an example, I have set up three questions in the app.
+- Questions are 3.
 - The pages are changed to 1 to 3.
 
 Desired<br><br>
