@@ -4,7 +4,7 @@ This is the daily challenge I participate in on [WebDevDaily](https://www.webdev
 
 ### Demo
 
-[See Demo Here](https://eobcre.github.io/feedback-survey/)
+[See Demo](https://eobcre.github.io/feedback-survey/)
 
 ### Features
 
