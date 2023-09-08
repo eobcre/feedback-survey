@@ -34,7 +34,7 @@ const Answer: React.FC = () => {
                 : ''
             } ${
               clicked === index
-                ? 'bg-black border-[#F4F9FF] shadow scale-150 after:w-[1.2rem] after:h-[0.048rem]'
+                ? 'bg-black border-[#F4F9FF] shadow scale-150 after:w-[1.28rem] after:h-[0.07rem]'
                 : ''
             }`}
           />
