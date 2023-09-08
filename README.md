@@ -2,10 +2,6 @@
 
 This is the daily challenge I participate in on [WebDevDaily](https://www.webdevdaily.io/).
 
-### Demo
-
-[See Demo](https://eobcre.github.io/feedback-survey/)
-
 ### Features
 
 - The progress bar displays the current page number and changes the progress meter accordingly when you click the "Previous" and "Next" buttons.
