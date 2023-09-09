@@ -32,8 +32,7 @@ const Answer: React.FC = () => {
               index < 9 &&
               `after:content-[''] after:absolute after:top-[3px] after:left-[10px] after:w-[2.1rem] after:h-[0.1rem] after:bg-[#B1CDF1]`
             } ${
-              clicked === index &&
-              'test absolute bg-black border-[#F4F9FF] shadow'
+              clicked === index && 'absolute bg-black border-[#F4F9FF] shadow'
             }`}
           />
           <label
