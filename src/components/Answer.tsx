@@ -37,7 +37,7 @@ const Answer: React.FC = () => {
           />
           <label
             htmlFor={`linked-${index}`}
-            className='absolute top-[2.2rem] left-[-1rem] text-xs w-[100px]'
+            className='absolute top-[2.2rem] left-[-0.5rem] text-xs w-[100px]'
           >
             {answer}
           </label>
